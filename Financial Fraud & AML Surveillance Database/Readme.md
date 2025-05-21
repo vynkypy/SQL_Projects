@@ -110,7 +110,3 @@ Feel free to fork and expand the dataset!
 
 ---
 
-## 📄 License
-
-Open for educational and analytical use under the MIT License.
-
