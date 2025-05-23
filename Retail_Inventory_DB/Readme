@@ -1,0 +1,41 @@
+# 🛒 StoreSales Table - Window Functions Practice
+
+This project includes a `StoreSales` table and sample data designed specifically for learning and practicing SQL **window functions** in SQL Server.
+
+---
+
+## 📊 Table Overview
+
+The `StoreSales` table simulates daily retail sales data across multiple stores, products, and regions. It includes attributes like inventory levels, sales performance, pricing, promotions, and seasonality.
+
+### 🧱 Schema Definition
+
+| Column Name          | Data Type         | Description                                 |
+|----------------------|-------------------|---------------------------------------------|
+| `Date`               | DATE              | The date of the sale                        |
+| `Store_ID`           | VARCHAR(10)       | Unique ID of the store                      |
+| `Product_ID`         | VARCHAR(10)       | Unique ID of the product                    |
+| `Category`           | VARCHAR(50)       | Product category (e.g., Electronics, Toys)  |
+| `Region`             | VARCHAR(20)       | Region where the store is located           |
+| `Inventory_Level`    | INT               | Inventory on hand                           |
+| `Units_Sold`         | INT               | Units sold on the date                      |
+| `Units_Ordered`      | INT               | Units ordered by store                      |
+| `Demand_Forecast`    | DECIMAL(10,2)     | Predicted demand                            |
+| `Price`              | DECIMAL(10,2)     | Product price                               |
+| `Discount`           | DECIMAL(5,2)      | Discount offered                            |
+| `Weather_Condition`  | VARCHAR(20)       | Weather on that day                         |
+| `Holiday_Promotion`  | BIT               | 1 if promotion or holiday, else 0           |
+| `Competitor_Pricing` | DECIMAL(10,2)     | Price offered by a competitor               |
+| `Seasonality`        | VARCHAR(20)       | Season (e.g., Summer, Winter)               |
+
+---
+
+## 🎯 Purpose
+
+This dataset is tailored for practicing **SQL window functions**, including:
+
+- Aggregate functions: `SUM()`, `AVG()`, `COUNT()`
+- Ranking functions: `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`
+- Offset functions: `LEAD()`, `LAG()`
+
+---
