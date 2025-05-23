@@ -1,0 +1,40 @@
+CREATE TABLE StoreSales (
+    Date DATE,
+    Store_ID VARCHAR(10),
+    Product_ID VARCHAR(10),
+    Category VARCHAR(50),
+    Region VARCHAR(20),
+    Inventory_Level INT,
+    Units_Sold INT,
+    Units_Ordered INT,
+    Demand_Forecast DECIMAL(10,2),
+    Price DECIMAL(10,2),
+    Discount DECIMAL(5,2),
+    Weather_Condition VARCHAR(20),
+    Holiday_Promotion BIT,
+    Competitor_Pricing DECIMAL(10,2),
+    Seasonality VARCHAR(20)
+);
+
+-- Sample Data Inserts (20 Rows)
+INSERT INTO StoreSales VALUES
+('2023-05-01', 'S001', 'P0001', 'Electronics', 'North', 300, 50, 70, 60.00, 100.00, 10.00, 'Sunny', 1, 98.00, 'Summer'),
+('2023-05-02', 'S001', 'P0002', 'Furniture', 'North', 200, 40, 50, 45.00, 200.00, 20.00, 'Rainy', 0, 195.00, 'Summer'),
+('2023-05-03', 'S002', 'P0003', 'Toys', 'South', 500, 100, 120, 95.00, 30.00, 5.00, 'Cloudy', 1, 28.00, 'Spring'),
+('2023-05-04', 'S002', 'P0004', 'Clothing', 'South', 450, 80, 100, 85.00, 50.00, 15.00, 'Sunny', 0, 48.00, 'Spring'),
+('2023-05-05', 'S001', 'P0005', 'Electronics', 'North', 350, 60, 75, 65.00, 120.00, 5.00, 'Rainy', 1, 118.00, 'Summer'),
+('2023-05-06', 'S003', 'P0006', 'Furniture', 'East', 220, 55, 60, 52.00, 210.00, 25.00, 'Snowy', 0, 205.00, 'Winter'),
+('2023-05-07', 'S003', 'P0007', 'Toys', 'East', 330, 70, 90, 72.00, 35.00, 10.00, 'Sunny', 1, 34.00, 'Winter'),
+('2023-05-08', 'S004', 'P0008', 'Clothing', 'West', 400, 85, 95, 88.00, 45.00, 0.00, 'Cloudy', 0, 44.00, 'Autumn'),
+('2023-05-09', 'S004', 'P0009', 'Electronics', 'West', 370, 90, 100, 92.00, 110.00, 5.00, 'Snowy', 1, 109.00, 'Autumn'),
+('2023-05-10', 'S001', 'P0010', 'Furniture', 'North', 250, 30, 40, 35.00, 180.00, 15.00, 'Rainy', 1, 175.00, 'Summer'),
+('2023-05-11', 'S002', 'P0011', 'Toys', 'South', 310, 65, 75, 67.00, 32.00, 5.00, 'Sunny', 0, 30.00, 'Spring'),
+('2023-05-12', 'S002', 'P0012', 'Clothing', 'South', 290, 45, 60, 50.00, 42.00, 10.00, 'Rainy', 0, 41.00, 'Spring'),
+('2023-05-13', 'S003', 'P0013', 'Electronics', 'East', 420, 95, 110, 100.00, 115.00, 5.00, 'Sunny', 1, 112.00, 'Winter'),
+('2023-05-14', 'S003', 'P0014', 'Furniture', 'East', 210, 25, 30, 28.00, 205.00, 10.00, 'Cloudy', 0, 200.00, 'Winter'),
+('2023-05-15', 'S004', 'P0015', 'Toys', 'West', 320, 75, 85, 78.00, 40.00, 0.00, 'Sunny', 1, 39.00, 'Autumn'),
+('2023-05-16', 'S004', 'P0016', 'Clothing', 'West', 360, 55, 65, 57.00, 48.00, 5.00, 'Rainy', 0, 47.00, 'Autumn'),
+('2023-05-17', 'S001', 'P0017', 'Electronics', 'North', 310, 85, 90, 87.00, 95.00, 10.00, 'Sunny', 1, 94.00, 'Summer'),
+('2023-05-18', 'S001', 'P0018', 'Furniture', 'North', 230, 35, 45, 37.00, 195.00, 20.00, 'Cloudy', 0, 190.00, 'Summer'),
+('2023-05-19', 'S002', 'P0019', 'Toys', 'South', 340, 60, 70, 62.00, 38.00, 0.00, 'Snowy', 1, 36.00, 'Spring'),
+('2023-05-20', 'S002', 'P0020', 'Clothing', 'South', 280, 50, 55, 52.00, 46.00, 5.00, 'Sunny', 0, 45.00, 'Spring');
