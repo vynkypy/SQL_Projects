@@ -4,3 +4,4 @@ select c.Name, c.Country, a.AccountType, a.Status,a.Balance, t.Amount as Transac
 on a.CustomerID = c.CustomerID
 join Transactions t on t.FromAccountID = a.AccountID
 where c.IsBlacklisted = 1
+
